@@ -4,7 +4,7 @@ module Spree
 	  preference :password, :password
 	  preference :partner, :string
 	  
-	  attr_accessible :login, :password, :partner
+	  attr_accessible :preferred_login, :preferred_password, :preferred_partner
 
 	  def provider_class
 		ActiveMerchant::Billing::PayflowGateway
